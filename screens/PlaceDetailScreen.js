@@ -9,6 +9,11 @@ const PlaceDetailsScreen = props =>{
     )
 }
 
+PlaceDetailsScreen.navigationOptions = navData =>{
+    return{
+        headerTitle: navData.navigation.getParam('placeTitle')
+    }
+}
 const syles=StyleSheet.create({
 
 });
